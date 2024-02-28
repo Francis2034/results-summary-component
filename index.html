@@ -4,72 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/assets/images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-<div class="card">
-  <div class="card-container">
-    <section class="result">
-    <h3 class="title"></h3>
-    <div class="circle">
-      <h1>76</h1>
-      <p>of 100</p>
-    </div>
-    <b>Great</b>
-    <p class="info">You score higher than 65% of the people who have taken these tests.</p>
-  </section>
-  <section class="summary">
-    <h1 class="title">Summary</h1>
-    <div class="rows">
-      <div class="row">
-        <div class="badge">
-          <img src="/assets/images/icon-reaction.svg" alt="icon">
-          <b>Reaction</b>
-        </div>
-        <div>
-          <p><b>80</b> / 100</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="badge">
-          <img src="/assets/images/icon-memory.svg" alt="icon">
-          <b>Memory</b>
-        </div>
-        <div>
-          <p><b>92</b> / 100</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="badge">
-          <img src="/assets/images/icon-verbal.svg" alt="icon">
-          <b>Verbal</b>
-        </div>
-        <div>
-          <p><b>61</b> / 100</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="badge">
-          <img src="/assets/images/icon-visual.svg" alt="icon">
-          <b>Visual</b>
-        </div>
-        <div>
-          <p><b>72</b> / 100</p>
-        </div>
-      </div>
-      <button class="btn">Continue</button>
-    </div>
-  </section>
-  </div>
-</div>
 
+  <main>
+    <section class="main_section">
+      <div class="flex__container">
+        <div class="results__container">
+          <h1 class="results_h1">Your Result</h1>
+          <div class="score__results__container">
+            <p class="score__results">
+              <span>76</span>
+              <span>of 100</span>
+            </p>
+          </div>
+          <div class="results__text__content">
+            <span>Great</span>
+            <p>
+              Your performance exceed 65% of the people conducting the test here!
+            </p>
+          </div>
+        </div>
+
+        <div class="summary_wrap">
+          <div class="summary__container">
+            <h1 class="summary_h1">Summary</h1>
+            <div class="rows_wrapper">
+              <div class="row">
+                <div class="badge">
+                  <img src="/assets/images/icon-reaction.svg" alt="Reaction Icon">
+                  <b class="reaction_b">Reaction</b>
+                </div>
+                <div>
+                  <p>
+                    <span class="summary_score">80</span>
+                    <span class="summary_goal"> / 100</span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="badge">
+                  <img src="/assets/images/icon-memory.svg" alt="Reaction Icon">
+                  <b class="memory_b">Memory</b>
+                </div>
+                <div>
+                  <p>
+                    <span class="summary_score">92</span>
+                    <span class="summary_goal"> / 100</span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="badge">
+                  <img src="/assets/images/icon-verbal.svg" alt="Reaction Icon">
+                  <b class="verbal_b">Verbal</b>
+                </div>
+                <div>
+                  <p>
+                    <span class="summary_score">61</span>
+                    <span class="summary_goal"> / 100</span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="badge">
+                  <img src="/assets/images/icon-visual.svg" alt="Reaction Icon">
+                  <b class="visual_b">Visual</b>
+                </div>
+                <div>
+                  <p>
+                    <span class="summary_score">73</span>
+                    <span class="summary_goal"> / 100</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="button__container">
+              <button id="continueBtn">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
